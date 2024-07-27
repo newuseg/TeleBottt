@@ -1,5 +1,14 @@
 const TelegramBot = require('node-telegram-bot-api');
-const math = require('mathjs');
+// const math = require('mathjs');`
+
+app.get("/", (req, res) => {
+    res.send("Bot is Live");
+});
+
+const port = 3000;
+app.listen(port, () => {
+    console.log(`Server running at http://localhost:$(port)`);
+});
 
 const token = '6911484112:AAHd4u5vZ7lvwyayrgCT2F1CBZJmxqBssTg';
 
